@@ -1,3 +1,5 @@
+[Formatação utilizada](https://katex.org/docs/supported.html)
+
 # Análise do Problema
 Segundo o enunciado, é necessário calcular quantos pedaços serão armazenados, depois de todas as divisões. 
 
@@ -59,7 +61,7 @@ A variável 'resultado' armazena a soma de pedaços não utilizados em cada divi
 - Término: ao final da iteração, temos n é igual ao total de divisões que devem ser realizadas. Assim, temos a soma de todas as barras que foram armazenadas, atendendo ao que foi pedido no enunciado. 
 
 
-# [Análise de Tempo](https://katex.org/docs/supported.html)
+# [Análise de Tempo](https://www.inf.ufpr.br/maratona/tle.html)
 Consideramos a entrada de maior caso 1000, de forma geral, temos que:
 
 O computador executa 10 ^ 7 ações por segundo. Podemos pensar em algumas funções que são aceitáveis para essa sentrada: 

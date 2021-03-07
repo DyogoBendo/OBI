@@ -7,46 +7,65 @@ O problema pede para que respondamos se é possível arquivar de forma perfeita 
 - Se a aba do elemento for P, então o sucessor deve ser 1 ou nenhum
 - Todos os elementos devem ser armazenados. 
 
-Bem, podemos iniciar de qualquer ordem. Ou seja, se temos as posições de aba (1, 2, 3, 4), podemos arquivar formando as seguintes sequências: 
+Segundo o enunciado, a sequência deve sempre iniciar pelo 1, então temos como exemplo a sequência: 
 
-- 1, 2, 3, 4, 1, 2...
-- 2, 3, 4, 1, 2, 3...
-- 3, 4, 1, 2, 3, 4...
-- 4, 1, 2, 3, 4, 1...
+- 1, 2, 3, 4, 1, 2, 3, 4
 
-Algo interessante, é começar sempre pela posição que mais aparece, porque assim, ela pode aparecer mais que as outras (na primeira e na última posição). Por exemplo, supomos que temos os valores (1, 2, 3, 3, 4), podemos iniciar pelo 3, e finalizar pelo 3, essa é a única forma de manter a sequência e ter todos os elementos incluídos: 
+Pensemos em algumas proposições que quando uma sequência é valida: 
 
-- 3, 4, 1, 2, 3
+- O número 1 nunca aparecerá em menor quantidade que outro número 
 
-Qualquer outra forma de ordenação é falha.  
+É simples essa ideia: se o número 1 aparece menos que os outros números, por exemplo (1, 2, 2, 3, 4): 
 
-Agora, vejamos se temos duas posições que aparecem mais frequentemente (1, 2, 3, 3, 4, 4). Seguindo pela lógica anterior, poderíamos ordenar de duas formas: 
+- 1, 2, 3, 4, ..., 2
 
-- 3, 4, 1, 2, 3, 4
-- 4, 1, 2, 3, 4, 1 X 
+Não consiguiriamos utilizar todos os números, pois, nesse caso, "falta um 1", para que a sequência possa ser completa. 
 
-A segunda opção de mostra falha. Isso porque, quem sucede o 4 é o 1, que não é um dos que aparece mais frequentemente. De forma intuitiva, podemos considerar duas coisas até aqui então:
+- As sequência são repetições, e podemos analisar apenas o caso base
 
-- Devemos iniciar sempre por uma posição que aparece com maior frequência. 
-- Se houverem mais de duas posições com maior frequência, escolhemos a de menor valor
+Por exemplo, se temos (1, 1, 2, 2, 3, 3, 4, 4):
 
-Mas, essa segunda constatação pode se mostrar falha em outro caso. Consideremos as posições (1, 1, 2, 3, 3, 4), se seguirmos o que foi proposto, teremos: 
+- 1, 2, 3, 4, 1, 2, 3, 4
 
-- 1, 2, 3, 4, 1, 2 X
+Temos nesse caso, uma repetição da sequência (1, 2, 3, 4) duas vezes, que é a quantidade de vezes que aparece cada um dos números (2 vezes). 
 
-Se mostra falho novamente, isso porque, mesmo que o 1 seja menor que o 3, eles não estão em sequência. Corrigindo a proposição anterior, temos: 
+E para qualquer sequência, repetimos o número de vezes os elementos, até chegarmos no momento em que um dos elementos é igual a 0 ou todos são iguais a 1. Por exemplo, na sequência (1, 1, 2, 3, 4, 4): 
 
-- Se houverem duas ou mais posições com maior frequência, elas devem estar em sequência. Se for o caso, escolhemos a menor posição para iniciar. 
+- Realizamos 1x: 1, 2, 3, 4 
+- Agora temos: 1, 3, 4
 
-Outro detalhe, é que, não é sempre que uma posição com maior frequência permite uma sequência válida. Por exemplo: (1, 1, 1, 2, 3, 4)
+Precisamos analisar apenas essa última sequência, e percebemos como é uma sequência inválida. 
 
-- 1, 2, 3, 4, 1, 2 X
+Assim, para todo caso, basta reduzirmos ao caso básico, e analisar se ele é possível. Para reduzir ao caso básico, podemos simplesmente ver quantas vezes cada número aparece. O número que menos aparece, representa quando a sequência acaba. Por exemplo: (1, 1, 1, 2,2, 2, 3, 3, 4, 4, 4), nesse caso, o número 3 aparece 2 vezes, assim, temos que a retiramos 2 da quantidade de vezes que cada número repetiu: 
 
-Podemos generalizar para que sempre que houver um elemento que a frequência é ao menos 2 a mais que o elemento que menos aparece, então é impossível formar uma sequência válida. 
+1 = 3 - 2 -> 1
+2 = 3 - 2 -> 1
+3 = 2 - 2 -> 0
+4 = 3 - 2 -> 1
 
-Assim, podemos considerar as seguintes proposições para formular o código: 
+Temos então a sequência formada apenas pelos que apresentam alguma quantia: 1, 2, 4 e precisamos analisar apenas ela para saber se a situação é válida. 
 
-- Devemos observar a frequência que cada elemento aparece
-    - Se a frequência que um elemento aparece é 2 maior que a do elemento com menor frequência, então a sequência é inválida
-    - Se os elementos com maior frequência não estiverem em sequência, então também temos uma situação inválida
-    - Se os elementos de maior frequência estiverem em sequência, e a distância deles para o elemento de menor frequência é apenas 1, então, devemos iniciar pelo menor elemento dos que aparecem com maior frequência. 
+- Uma situação só é válida se, no seu caso básico, temos uma sequência sem 0 entre dois 1: 
+
+Utilizando o exemplo acima, a sequência ficou: 1, 1, 0, 1 
+
+Como temos um 0 entre dois 1, a sequência é inválida. 
+
+- Se no caso básico, houver algum número superior a 1, a sequência é inválida
+
+Pensando em um exemplo (1, 1, 2, 2, 2, 2, 3, 3, 4, 4): 
+
+1 = 2 - 2 -> 0
+2 = 4 - 2 -> 2
+3 = 2 - 2 -> 0
+4 = 2 - 2 -> 0
+
+Temos a sequência formada por: 0, 2, 0, 0, e não tem como encaixar dois 2 nessa situação. 
+
+## Resumindo
+
+Temos que uma sequência é válida apenas quando: 
+
+- A sequência base (a sequência de quando a quantidade de uma das posições é 0), tem uma sequência sem "furos", de 1. 
+
+

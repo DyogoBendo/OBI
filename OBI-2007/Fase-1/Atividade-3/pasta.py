@@ -1,37 +1,28 @@
 if __name__ ==  "__main__":
     p, n = map(int, input().split())
-    posic = {}
-    
+    posic = [0 for i in range(p)]
     for i in range(n):
-        entrada = input()
-        try:
-            posic[entrada] += 1
-        except:
-            posic[entrada] = 1  
+        entrada = int(input())
+        posic[entrada - 1] += 1
     
-    maior = max(posic.values())
-    menor = min(posic.values())
+    menor = min(posic)
+    base_case = [ value - menor for value in posic]
     
-    if (maior - menor) >= 2:
-        print("N")
-    else:
-        last_key = 0
-        check = True
-        if len(posic.keys()) == 1:
-            check = False
-        for value, key in posic.items():
-            if value == maior:
-                if last_key == 0:
-                    last_key = key
-                else:
-                    if int(key) == int(last_key) + 1:
-                        last_key = key
-                    else:
-                        check = False                        
-                        break
+    worked = True
+    for i in range(1, len(base_case)):
+        ant = base_case[i - 1]
+        atual = base_case[i]
+        if ant > 1:
+            worked = False
+            break
+        if ant == 0 and atual == 1: 
+            worked = False
+            break
+        if atual > 1:
+            worked = False
+            break
         
-        if check:
-            print("S")
-        else:
-            print("N")
-    
+    if worked: 
+        print("S")
+    else:
+        print("N")

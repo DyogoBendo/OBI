@@ -66,6 +66,64 @@ Temos a sequência formada por: 0, 2, 0, 0, e não tem como encaixar dois 2 ness
 
 Temos que uma sequência é válida apenas quando: 
 
-- A sequência base (a sequência de quando a quantidade de uma das posições é 0), tem uma sequência sem "furos", de 1. 
+- A sequência base (a sequência de quando a quantidade de uma das posições é 0), tem uma sequência sem "furos", de 1.
+
+# Análise do Algoritmo
+
+- Linhas 2 a 5 são constantes
+- Linha 6 é executada n + 1 vezes
+- Linhas 7 e 8 são executadas n vezes
+- Linhas 9 a 15 são constantes
+- Linha 16 executada n vezes, no pior caso
+- Linhas 17 a 32 executadas n - 1 vezes, no pior caso 
+
+P.S: O pior caso considerado aqui é quando a sequência é válida, então devemos iterar por todos os elementos
+
+- Linhas 35 a 38 constantes
+
+Somando todas as linhas, temos, aproximadamente: n + 1 + 2 (n) + n + 15 (n - 1) + c, sendo c uma constante qualquer
+
+Temos então: 19n - 14 
+
+Como se trata de um polinômio, podemos considerar simplesmente que: 
+
+19n - 14 = O(n)
+
+Tratamos então que esse algoritmo é linear. 
+
+Analisando o loop invariante das linhas 16 a 32: 
+
+- Consideramos como invariante que uma sequência é válida se S[0, ..., i - 1]:
+    - Não apresentar nenhum "furo" 
+    - Não apresentar nenhum valor maior que 1
+
+- Inicialização: nesse momento, temos a sequência com um elemento. Nesse caso, temos certeza que o anterior não é 0 e ele 1, pois não há anterior. O único problema é se ele possui um valor > 1, mas dentro da iteração, ocorre essa verificação. 
+
+- Manutenção: a cada iteração, aumentamos em um essa sequência, e verificamos na iteração se ela é válida. Caso não seja, o loop é encerrado
+
+- Término: após todas as iterações temos: i = n, então a sequência é [0, ..., n - 1]. Podemos afirmar que não há nenhum dos problemas anteriores, pois se houvesse, a sequência teria sido encerrada antes. 
+
+
+# [Análise de Tempo](https://www.inf.ufpr.br/maratona/tle.html)
+
+A entrada contém:
+
+ $$ 
+ n <=  1.000.000 = 10 ^ 6
+ $$
+
+ Verificamos a validade de nosso algoritmo: 
+
+ $$
+f(n) = n 
+ $$
+
+ $$
+f(10 ^ 6) = 10 ^ 6 <  10 ^ 7
+ $$
+
+No entanto, por algum motivo, esse código falha nos casos de testes, pois demora mais de 1 segundo para ler 1000000 dados. 
+
+
 
 

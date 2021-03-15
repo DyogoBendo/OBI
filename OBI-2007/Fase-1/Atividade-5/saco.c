@@ -45,7 +45,6 @@ int main (void){
   for (i = 0; i < n; i++) {
     scanf (" %d %d %c %d", &idc, &presente[i], &type, &nv);
     sinal[i] = SINAL(type);
-    printf ("-- %d %d\n", i, sinal[i]);
     for (j = 0; j < nv; j++) { 
       scanf (" %d", &v);
       grafo[i][v] = 1;
@@ -60,7 +59,6 @@ int main (void){
     for (j = 0; j < MAX_P; j++)
       for (k = 0; k < MAX_P; k++)
 	if (j + k > 0 && matrix [i][j][k] && r > abs (j - k)) {
-	  printf ("%d %d %d\n", i, j, k);
 	  r = abs(j - k);
 	}
   

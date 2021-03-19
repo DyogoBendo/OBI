@@ -45,7 +45,7 @@ void bfs(void) {
 			if ((tab[nl][nc] + v.t) % 10 - 1 > (tab[v.l][v.c] + v.t) % 10) continue;
 			if (dist[nl][nc][nt] < INF) continue;
 			dist[nl][nc][nt] = dist[v.l][v.c][v.t] + 1;
-			fila.push(vertex(nl, nc, nt));
+			fila.push(vertex(nl, nc, nt));	
 		}
 	}
 }

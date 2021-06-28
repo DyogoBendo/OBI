@@ -8,12 +8,12 @@ class Vertex():
         self.c = c
         self.t = t
 
-def wipe(v, x):
-    v = [x for _ in range(len(v))]
+def wipe(v):
+    v = [inf for _ in range(len(v))]
+    print(v)
 
 def bfs():
-    global fila, dist, tab
-    wipe(dist, inf)
+    global fila, dist, tab         
     fila = Queue(maxsize=0)
     fila.put(Vertex(0, 0, 0))
     dist[0][0][0] = 0
@@ -34,15 +34,13 @@ def bfs():
             dist[nl][nc][nt] = dist[v.l][v.c][v.t] + 1
             fila.put(Vertex(nl, nc, nt))
 
-if __name__ == "__main__":
-    global DIRECTIONS, N, M, tab    
-    
+if __name__ == "__main__":        
     DIRECTIONS = [[0,0], [1, 0], [0, 1], [-1, 0], [0, -1]]  # direções
     
     N, M = map(int, input().split())
     
     tab = [[0 for _ in range(M)] for _ in range(N)]
-    dist = [[[0 for _ in range(10)]for _ in range(M) ]for _ in range(N)]
+    dist = [[[inf for _ in range(10)]for _ in range(M) ]for _ in range(N)]
     
     for i in range(N):
         tab[i] = list(map(int, input().split()))

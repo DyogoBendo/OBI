@@ -1,23 +1,21 @@
 from math import inf
 
-def bellman(g, size):
-    max_distance = inf
+def floyd(g, size):
 
-    for i in range(size):
-        dist = [inf for _ in range(size)]
-        dist[i] = 0
-        for _ in range(size):
+    for k in range(size):
+        for i in range(size):
             for j in range(size):
-                for k in range(size):
-                    if dist[j] + g[j][k] < dist[k]:
-                        dist[k] = dist[j] + g[j][k]                
-        dist.sort()
-        b = dist[-1]
+                g[i][j] = min(g[i][j], g[i][k] + g[k][j])
 
-        if b < max_distance:
-            max_distance = b
+    min_distance = inf
+    for i in range(size):
+        max_distance = 0        
+        for j in range(size):
+            max_distance = g[i][j] if g[i][j] > max_distance else max_distance
+        if max_distance < min_distance:
+            min_distance = max_distance
 
-    print(max_distance)
+    print(min_distance)
 
 if __name__ == '__main__':
     s, c = map(int, input().split())
@@ -27,4 +25,4 @@ if __name__ == '__main__':
         graph[a - 1][b - 1] = c
         graph[b - 1][a - 1] = c
 
-    bellman(graph, s)
+    floyd(graph, s)

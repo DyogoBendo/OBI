@@ -1,4 +1,5 @@
 from math import hypot
+from sys import stdin
 
 if __name__ == '__main__':
     n, m = map(int, input().split())
@@ -6,7 +7,7 @@ if __name__ == '__main__':
     x = 0
     y = 0
     for _ in range(n):
-        c, d = input().split()
+        c, d = stdin.readline().split()
         d = int(d)
         if c == 'N':
             y += d

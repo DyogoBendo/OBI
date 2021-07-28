@@ -1,13 +1,15 @@
 if __name__ == '__main__':
-    n = int(input())
-    quadrantes_registrados = set()
-    quadrantes_totais = []
+    n = int(input())    
+    lista = [[0 for _ in range(501)] for _ in range(501)]
+    is_mito = True
     for i in range(n):
-        coordenadas = tuple(map(int, input().split()))
-        quadrantes_registrados.add(coordenadas)
-        quadrantes_totais.append(coordenadas)
-    
-    if len(quadrantes_totais) == len(quadrantes_registrados):
+        x, y = map(int, input().split())
+        k = lista[x][y]
+        if k == 1:
+            is_mito = False
+        lista[x][y] = 1
+
+    if is_mito:
         print(0)
     else:
         print(1)

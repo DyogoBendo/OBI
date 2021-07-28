@@ -1,7 +1,8 @@
+from math import hypot
+
 if __name__ == '__main__':
     n, m = map(int, input().split())
-    afastou = False
-    m_squared = m ** 2
+    afastou = False    
     x = 0
     y = 0
     for _ in range(n):
@@ -16,9 +17,9 @@ if __name__ == '__main__':
         if c == 'O':
             x -= d
         
-        euclian_distance = (x ** 2) + (y ** 2)
+        euclian_distance = hypot(x, y)
 
-        if euclian_distance > m_squared:
+        if euclian_distance > m:
             afastou = True
 
     if afastou:

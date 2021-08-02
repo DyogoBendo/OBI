@@ -20,9 +20,7 @@ if __name__ == '__main__':
                 paises[o - 1][0] += 1
                 paises[p - 1][1] += 1
                 paises[b - 1][2] += 1        
-            paises = sorted(paises, key=lambda pais:pais[2], reverse=True)
-            paises = sorted(paises, key=lambda pais:pais[1], reverse=True)
-            paises = sorted(paises, key=lambda pais: pais[0], reverse=True)            
+            paises = sorted(paises, key=lambda pais:(pais[0], pais[1], pais[2]), reverse=True)            
             
             s = ''
             for j in range(n):

@@ -8,6 +8,4 @@ if __name__ == '__main__':
         if l == "I":
             inversoes.append((i, f))
         else:
-            soma = ((i + f) * (f - i + 1) )/ 2
-            for inversao in inversoes:
-                
+            soma = ((i + f) * (f - i + 1) )/ 2            

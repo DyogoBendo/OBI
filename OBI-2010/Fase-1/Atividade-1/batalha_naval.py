@@ -1,63 +1,52 @@
-coordenadas_adicionadas = set()
+import sys
+sys.setrecursionlimit(15000)
+
 tabuleiro = []
 barcos = []    
+dx = [1, 0, -1, 0]
+dy = [0, 1, 0, -1]
+n = 0
+m = 0
 
-def adiciona_coordenada(existente, nova):
-    for barco in barcos:
-        if existente in barco:
-            barco.add(nova)
-            coordenadas_adicionadas.add(nova)
+
+def time_for_recursion(i, j, id):    
+    barco_size = 1
+    barcos[i][j] = id
+    for k in range(4):
+        i2 = i + dx[k]
+        j2 = j + dy[k]
+
+        if i2 < 0 or j2 < 0 or i2 >= n or j2 >= m:
+            continue
+        if tabuleiro[i2][j2] == "#" and barcos[i2][j2] == -1:
+            barco_size += time_for_recursion(i2, j2, id)
+    return barco_size
 
 if __name__ == '__main__':
-    n, m = map(int, input().split())
-    repeated = []
+    n, m = map(int, input().split())    
     for i in range(n):
-        tabuleiro.append(input())
+        tabuleiro.append(input())        
+        barcos.append([-1 for _ in range(m)])
+    
+    tamanho = []
+    k = 0
     for i in range(n):
         for j in range(m):
-            if tabuleiro[i][j] == '#':
-                add = 0
-                atual = (i, j)
-                esquerda = (i, j-1)
-                direita = (i, j + 1)
-                cima = (i - 1, j)
-                baixo = (i + 1, j)
+            if tabuleiro[i][j] == '#' and barcos[i][j] == -1:
+                tamanho.append(time_for_recursion(i, j, k))
+                k += 1
 
-                if esquerda in coordenadas_adicionadas:
-                    adiciona_coordenada(esquerda, atual)
-                    add += 1
-                if direita in coordenadas_adicionadas:
-                    adiciona_coordenada(direita, atual)
-                    add += 1
-                if cima in coordenadas_adicionadas:
-                    adiciona_coordenada(cima, atual)
-                    add += 1
-                if baixo in coordenadas_adicionadas:
-                    adiciona_coordenada(baixo, atual)
-                    add += 1
-                if add == 0:
-                    barcos.append({atual})
-                elif add > 1:
-                    repeated.append(atual)      
-                coordenadas_adicionadas.add(atual)                
-    for coordenada in repeated:
-        merged = set()
-        for barco in barcos:
-            if coordenada in barco:
-                merged = merged.union(barco)
-                barcos.remove(barco)
-        barcos.append(merged)
-
-    k = int(input())
+    s = int(input())
 
     barcos_destruidos = 0    
-    for i in range(k):
+    for i in range(s):
         l, c = map(int, input().split())  
-        for barco in barcos:
-            try:                
-                barco.remove((l - 1, c - 1))
-                if len(barco) == 0:
-                    barcos_destruidos += 1
-            except:
-                pass        
+
+        barco_valor = barcos[l - 1][c - 1]
+        if barco_valor != -1:
+            tamanho[barco_valor] -= 1
+            if tamanho[barco_valor] == 0:
+                barcos_destruidos += 1
+            barcos[l - 1][c - 1] = -1
+
     print(barcos_destruidos)

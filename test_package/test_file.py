@@ -9,7 +9,7 @@ def create_test(main, files, number_tests=11):
     conjunto_testes_errados = set()  
     print(PONTILHADO)   
     for l in range(1, number_tests):        
-        files_folder = Path(files, "test" + str(l))        
+        files_folder = Path(files,  str(l))        
         print(f"\t\033[95mCONJUNTO DE TESTES {l}: \033[0m")
         print(PONTILHADO)
         passed_test_group = True

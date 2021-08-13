@@ -70,6 +70,7 @@ def create_test(main, files, number_tests=11):
         print(f"\tRESULTADO GRUPO DE TESTES {l}: " + result_print)
         print(f"\tNÚMERO DE TESTES CERTOS: {num_testes_certos}/{num_testes}")
         print(PONTILHADO)
+    conjunto_testes_errados
     result_print = '\033[92m' + "PASSOU" + '\033[0m' if passed_all_tests else '\033[91m' + "ERRO NOS CONJUNTOS DE TESTES: " + ", ".join(conjunto_testes_errados) +'\033[0m'
     print("RESULTADO TOTAL: " + result_print)
     print(f"NÚMERO DE CONJUNTOS DE TESTES CERTOS: {num_conjunto_testes_certos}/11")

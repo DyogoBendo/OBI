@@ -2,6 +2,7 @@ from math import sqrt
 
 def main(file_input=input, test=False):
     n, d = map(int, file_input().split())
+    d *= d
     c = True
     arvores = []
     for _ in range(n):
@@ -9,25 +10,21 @@ def main(file_input=input, test=False):
         arvores.append((x, y))
     for i in range(n):
         xi, yi = arvores[i]       
-        ci = False 
-        s = 0
+        ci = False         
         
         for j in range(n):
+
             if i == j:
-                continue
+                continue                        
+
             xj, yj = arvores[j]                        
-            distancia = sqrt((((xi - xj) ** 2) + ((yi - yj) ** 2)))
+            distancia = (xi - xj) ** 2 + (yi - yj) ** 2
 
-                
-
-            if distancia > d:
-                s += 1
-                # print(xi, yi, "-", xj, yj, ":", distancia)
-            if distancia <= d :            
-                if i == 20 or i == 35 or i == 61 or i == 67 or i == 95:
-                    print("Atual i:", i, "Atual j:", j)
-                    print("Distancia:", distancia, "-", "x e y:", xj, yj)
-                    print()                
+            if i == 20:
+                print("Distancia loka:", distancia)
+                print("Com quem: ", j)
+            
+            if distancia <= d :                            
                 ci = True                  
         if ci is False:
             c = False    

@@ -1,5 +1,5 @@
 def main(file_input=input, test=False):
-    a1, b1, a2, b2, a, b = map(int, file_input().split())
+    a1, a2, b1, b2, a, b = map(int, file_input().split())
 
     caso1 = a1 + b1 >= a and min(a2, b2) >= b
     caso2 = a2 + b2 >= a and min(a1, b1) >= b

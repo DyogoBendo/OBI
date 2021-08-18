@@ -12,8 +12,9 @@ def main(file_input=input, test=False):
         for i in range(n - m):
             x.append(0)
     subiu = [0 for _ in range(k)]
-    resposta = [0 for _ in range(k)]
-    for i in range(k-1, -1, -1):
+    resposta = []
+    apareceu_1 = False
+    for i in range(k-1, -1, -1):                
         s = x[i] + y[i] + subiu[i]
         if s == 2:
             subiu[i -1] = 1
@@ -21,7 +22,10 @@ def main(file_input=input, test=False):
         if s == 3:
             subiu[i -1] = 1
             s = 1
-        resposta[i] = s
+        if s == 1:
+            apareceu_1 = True
+        if apareceu_1:            
+            resposta.insert(0, s)
     c = " ".join(list(map(str, resposta)))
 
     if not test:

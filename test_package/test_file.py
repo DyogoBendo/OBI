@@ -3,13 +3,13 @@ import os
 
 PONTILHADO = "-"*100
 
-def create_test(main, files, number_tests=11):    
+def create_test(main, files, number_tests=11, prefix="", sufix="", start_position=0):    
     passed_all_tests = True         
     num_conjunto_testes_certos = 0     
     conjunto_testes_errados = set()  
     print(PONTILHADO)   
-    for l in range(1, number_tests):        
-        files_folder = Path(files,  str(l))        
+    for l in range(start_position, number_tests + start_position):        
+        files_folder = Path(files,  prefix + str(l) + sufix)        
         print(f"\t\033[95mCONJUNTO DE TESTES {l}: \033[0m")
         print(PONTILHADO)
         passed_test_group = True
@@ -23,15 +23,14 @@ def create_test(main, files, number_tests=11):
             input_filename = Path(files_folder, 'in' + str(i))        
             input_file = open(input_filename, 'r')
 
-            result = main(file_input=input_file.readline, test=True)
+            result = main(entrada=input_file.readline, test=True)
             
             output_filename = Path(files_folder, 'out' + str(i))
             output_file = open(output_filename, 'r')
             passed_test = True            
 
             num_linhas_certas = 0
-            num_linhas = 0                        
-            
+            num_linhas = 0                                                
             print(f"\t\tTESTE {i}: ")            
             for j in range(len(result)):                
                 num_linhas += 1
@@ -73,7 +72,7 @@ def create_test(main, files, number_tests=11):
     conjunto_testes_errados
     result_print = '\033[92m' + "PASSOU" + '\033[0m' if passed_all_tests else '\033[91m' + "ERRO NOS CONJUNTOS DE TESTES: " + ", ".join(conjunto_testes_errados) +'\033[0m'
     print("RESULTADO TOTAL: " + result_print)
-    print(f"NÚMERO DE CONJUNTOS DE TESTES CERTOS: {num_conjunto_testes_certos}/11")
+    print(f"NÚMERO DE CONJUNTOS DE TESTES CERTOS: {num_conjunto_testes_certos}/{number_tests}")
     print(PONTILHADO)
 
     

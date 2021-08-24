@@ -10,7 +10,7 @@ def create_test(main, files, number_tests=11, prefix="", sufix="", start_positio
     conjunto_testes_errados = set()      
     for l in range(start_position, number_tests + start_position):        
         files_folder = Path(files,  prefix + str(l) + sufix)        
-        txt += f"\tCONJUNTO DE TESTES {l}: <h1>\n" 
+        txt += f"#CONJUNTO DE TESTES {l}: \n" 
         txt += PONTILHADO + '\n'        
         passed_test_group = True
         num_testes_certos = 0

@@ -3,8 +3,8 @@ import os
 
 PONTILHADO = "-"*100
 
-ICONE_CORRETO = "![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-48.png)"
-ICONE_ERRADO = "![Incorreto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Close_Icon_Dark-48.png)"
+ICONE_CORRETO = "![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-24.png)"
+ICONE_ERRADO = "![Incorreto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Close_Icon_Dark-24.png)"
 
 def create_test(main, files, number_tests=11, prefix="", sufix="", start_position=0):    
     txt = ""

@@ -4,7 +4,7 @@ def main(entrada=input, test=False):
     resultado = 0  # número de partes que serão guardadas
     
     for i in a:
-        resultado += (i)    
+        resultado += (i - 1)    
 
     if not test:
         print(resultado)

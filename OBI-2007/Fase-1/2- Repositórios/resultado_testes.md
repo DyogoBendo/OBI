@@ -2,13 +2,13 @@
 
 
 - ## Grupo de Testes 2: 3/3 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 1.87 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1640 4
 			Resultado:	1640 4
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 0.59 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1640 4
 			Resultado:	1640 4
@@ -18,7 +18,7 @@
 			Resultado:	2540 7
 
 
-	- ### Teste 3: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 3 - 0.81 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	164 1
 			Resultado:	164 1
@@ -34,13 +34,13 @@
 
 
 - ## Grupo de Testes 3: 3/3 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 0.46 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	2001 6
 			Resultado:	2001 6
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 0.48 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	2000 3
 			Resultado:	2000 3
@@ -50,7 +50,7 @@
 			Resultado:	2001 6
 
 
-	- ### Teste 3: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 3 - 0.46 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	2002 3
 			Resultado:	2002 3
@@ -58,13 +58,13 @@
 
 
 - ## Grupo de Testes 4: 3/3 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 0.49 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1000 4
 			Resultado:	1000 4
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 0.50 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	10 20
 			Resultado:	10 20
@@ -74,7 +74,7 @@
 			Resultado:	100 200
 
 
-	- ### Teste 3: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 3 - 1.94 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1 9
 			Resultado:	1 9
@@ -86,7 +86,7 @@
 
 
 - ## Grupo de Testes 5: 3/3 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 0.77 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	4 1
 			Resultado:	4 1
@@ -112,7 +112,7 @@
 			Resultado:	9 1
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 0.92 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1 1
 			Resultado:	1 1
@@ -126,7 +126,7 @@
 			Resultado:	9 9
 
 
-	- ### Teste 3: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 3 - 1.12 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1 1000000000
 			Resultado:	1 1000000000
@@ -134,7 +134,7 @@
 
 
 - ## Grupo de Testes 6: 3/3 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 1.43 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1 4
 			Resultado:	1 4
@@ -144,7 +144,7 @@
 			Resultado:	1000 3
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 1.98 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	123456 7
 			Resultado:	123456 7
@@ -162,7 +162,7 @@
 			Resultado:	123456789 10
 
 
-	- ### Teste 3: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 3 - 1.27 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	514 514514
 			Resultado:	514 514514
@@ -202,7 +202,7 @@
 
 
 - ## Grupo de Testes 7: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 15.16 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	1434993 495590428
 			Resultado:	1434993 495590428
@@ -1940,7 +1940,7 @@
 			Resultado:	999113916 609477512
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 3.07 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	27566672 42528902
 			Resultado:	27566672 42528902
@@ -2024,7 +2024,7 @@
 
 
 - ## Grupo de Testes 8: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 4.12 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -3330,7 +3330,7 @@
 			Resultado:	997037856 824917160
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 5.77 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -4638,7 +4638,7 @@
 
 
 - ## Grupo de Testes 9: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 6.16 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -5944,7 +5944,7 @@
 			Resultado:	997037856 824917160
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 5.48 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -7252,7 +7252,7 @@
 
 
 - ## Grupo de Testes 10: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 7.19 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -8558,7 +8558,7 @@
 			Resultado:	997037856 824917160
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 5.06 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -9866,7 +9866,7 @@
 
 
 - ## Grupo de Testes 11: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 6.10 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -11172,7 +11172,7 @@
 			Resultado:	997037856 824917160
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 6.04 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -12480,7 +12480,7 @@
 
 
 - ## Grupo de Testes 12: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 4.07 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -13786,7 +13786,7 @@
 			Resultado:	997037856 824917160
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 4.04 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -15094,7 +15094,7 @@
 
 
 - ## Grupo de Testes 13: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 3.80 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	152318 998465329
 			Resultado:	152318 998465329
@@ -16400,7 +16400,7 @@
 			Resultado:	997037856 824917160
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 9.72 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -17584,7 +17584,7 @@
 
 
 - ## Grupo de Testes 14: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 11.62 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -18766,7 +18766,7 @@
 			Resultado:	999459468 91153614
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 7.50 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -19950,7 +19950,7 @@
 
 
 - ## Grupo de Testes 15: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 7.14 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -21132,7 +21132,7 @@
 			Resultado:	999459468 91153614
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 7.70 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -22316,7 +22316,7 @@
 
 
 - ## Grupo de Testes 16: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 8.12 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -23498,7 +23498,7 @@
 			Resultado:	999459468 91153614
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 9.19 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -24682,7 +24682,7 @@
 
 
 - ## Grupo de Testes 17: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 10.85 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -25864,7 +25864,7 @@
 			Resultado:	999459468 91153614
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 9.67 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -27048,7 +27048,7 @@
 
 
 - ## Grupo de Testes 18: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 10.23 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -28230,7 +28230,7 @@
 			Resultado:	999459468 91153614
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 9.98 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -29414,7 +29414,7 @@
 
 
 - ## Grupo de Testes 19: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 10.19 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -30596,7 +30596,7 @@
 			Resultado:	999459468 91153614
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 8.52 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -31780,7 +31780,7 @@
 
 
 - ## Grupo de Testes 20: 2/2 ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-18.png)
-	- ### Teste 1: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 1 - 11.19 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	176915 148986115
 			Resultado:	176915 148986115
@@ -32962,7 +32962,7 @@
 			Resultado:	999459468 91153614
 
 
-	- ### Teste 2: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
+	- ### Teste 2 - 9.85 milissegundos: ![Correto](https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Tick_Mark_Dark-12.png)
 			Linha 0: 
 			Gabarito :	628797 586274853
 			Resultado:	628797 586274853

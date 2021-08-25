@@ -9,3 +9,5 @@ venv/
 nome_arquivo.py
 
 __pycache__
+
+.vscode

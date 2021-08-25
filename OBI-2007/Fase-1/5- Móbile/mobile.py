@@ -98,3 +98,5 @@ def main(entrada=input, test=False):
 
 if __name__ == '__main__':
     main()
+
+# não passa em único caso de teste -> esse caso de teste não está de acordo com o próprio enunciado, que diz que existe apenas uma raiz pra cada móbile, mas o teste 5 do conjunto de testes 8 possuí 15 raízes

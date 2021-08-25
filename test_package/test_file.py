@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import time
 
 PONTILHADO = "-"*100
 
@@ -33,7 +34,12 @@ def create_test(main, files, number_tests=11, prefix="", sufix="", start_positio
             input_filename = Path(files_folder, 'in' + str(i))        
             input_file = open(input_filename, 'r')
 
+
+            start_time = time.time()
             result = main(entrada=input_file.readline, test=True)
+            end_time = time.time()
+
+            real_time = end_time - start_time
             
             output_filename = Path(files_folder, 'out' + str(i))
             output_file = open(output_filename, 'r')
@@ -64,9 +70,8 @@ def create_test(main, files, number_tests=11, prefix="", sufix="", start_positio
                 num_testes_certos += 1
                 result_print = ICONE_CORRETO_PEQUENO
 
-            parte_testes_individuais += f"\t- ### Teste {i}: " + result_print
-            parte_testes_individuais += '\n'            
-                        
+            parte_testes_individuais += f"\t- ### Teste {i} - {real_time * (10**3):.2f} milissegundos: " + result_print
+            parte_testes_individuais += '\n'                                    
             parte_testes_individuais += parte_linhas            
 
             parte_testes_individuais += '\n'

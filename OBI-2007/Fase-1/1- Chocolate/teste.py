@@ -16,9 +16,10 @@ if __name__ == '__main__':
 
     ARQUIVO_FINAL = "resultado_testes.md"
 
-    if os.path.exists(ARQUIVO_FINAL):
-        os.remove(ARQUIVO_FINAL)
-    f = open(ARQUIVO_FINAL, "w")
+    path_atual = current_dir + "/" + ARQUIVO_FINAL
+    if os.path.exists(path_atual):
+        os.remove(path_atual)
+    f = open(path_atual, "w")
     f.write(txt)
     
     

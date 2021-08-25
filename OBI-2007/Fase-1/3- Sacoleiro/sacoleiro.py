@@ -85,7 +85,7 @@ def main(entrada=input, test=False):
             for k in range(128): 
                 # Verificamos o valor de cada posição
                 # Fazemos três testes:
-                    # Se a posição não é a primeira coluna, na sua primeira posição
+                    # Se a posição não é a primeira coluna, na sua primeira posição, pois é necessário que seja comprado presente para pelo menos um filho
                     # Se o valor naquela posição é diferente de 0, ou seja, igual a 1
                     # Se o valor que consideramos como a menor diferença, é maior que a diferença entre a coluna j e a posição k, já que essa diferença denota a diferença de gastos com A e B
                 if j + k > 0 and matrix[i][j][k] and r > abs(j - k):

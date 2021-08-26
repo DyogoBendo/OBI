@@ -10,8 +10,7 @@ def main(entrada=input, test=False):
         else:            
             for k in range(len(letters)):                
                 if c.lower() in letters[k]:
-                    s += str(k + 2)
-    print(s)
+                    s += str(k + 2)    # as letras podem indicar os números de 2 a 9
     if not test:
         print(s)
     else:

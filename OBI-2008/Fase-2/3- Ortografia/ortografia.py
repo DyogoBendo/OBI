@@ -14,8 +14,8 @@ def editDistance(s, ls, t, lt):
     for i in range(1, ls + 1):
         for j in range(1, lt + 1):            
             ed[i][j] = min(
-                min(1 + ed[i-1][j], # remoção
-                1 + ed[i][j-1]), # inserção
+                1 + ed[i-1][j], # remoção
+                1 + ed[i][j-1], # inserção
                 ed[i-1][j-1] + (0 if s[i - 1] == t[j - 1] else 1)
             )        
     return ed[ls][lt] < 3

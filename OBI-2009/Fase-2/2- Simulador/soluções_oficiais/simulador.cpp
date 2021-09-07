@@ -71,6 +71,12 @@ void cut(int a){
 	interv.PB(novo);
 	
 	for(int i=interv.size()-1;i>id+1;i--) swap(interv[i],interv[i-1]);
+
+	cout << "corte: " << endl;
+	for(int i=0;i<interv.size();i++){
+		cout << interv[i].F << " " << interv[i].S << endl;
+	}
+	cout << endl;
 }
 
 ll soma(int a, int b){
@@ -78,13 +84,18 @@ ll soma(int a, int b){
 	int sum=0;
 	
 	ll resp=0;
+
+	for(int i=0;i<interv.size();i++){
+		cout << interv[i].F << " " << interv[i].S << endl;
+	}
+	cout << endl;
 	
 	for(int i=0;i<interv.size();i++){
 		
 		int qtd=mod(interv[i].F-interv[i].S)+1;
 		
 		if(sum+qtd>=a and sum+qtd<=b) resp+=(ll(interv[i].F+interv[i].S)*ll(qtd))/2LL;
-		
+		cout << resp << endl;
 		sum+=qtd;
 	}
 	

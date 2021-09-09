@@ -15,17 +15,15 @@ def main(entrada=input, test=False):
             continue
         soma = 0        
         for j in range(i):     
-            k = sequencia[-i:] if j == 0 else sequencia[-i:-j]
-
-            if i < num_digitos or j != 0:
+            if i == num_digitos and j == 0:
+                k = int(sequencia[-i:]) if j == 0 else int(sequencia[-i:-j])                
+                if k < n:
+                    soma += 1                
+            else:            
                 if j == 0:
                     soma += 1
                 else:
-                    soma += valores[-j]
-            else:  
-                k = int(k)              
-                if k < n:
-                    soma += 1                
+                    soma += valores[-j]              
         valores[-i] = soma
 
     for i in range(len(sequencia) - num_digitos - 1, -1, -1):
@@ -39,7 +37,7 @@ def main(entrada=input, test=False):
             soma += valores[i+num_digitos]        
         valores[i] = soma % RESTO
         
-    c = valores[0]    
+    c = valores[0]       
     if not test:
         print(c)
     else:        

@@ -21,7 +21,8 @@ def create_test(main, files, number_tests=11, prefix="", sufix="", start_positio
 
 
     parte_posterior = ""   
-    for l in range(start_position, number_tests + start_position):        
+    for l in range(start_position, number_tests + start_position):  
+        print(f"teste: {l}")      
         parte_testes_individuais = ""
         files_folder = Path(files,  prefix + str(l) + sufix)                
         passed_test_group = True
@@ -29,7 +30,8 @@ def create_test(main, files, number_tests=11, prefix="", sufix="", start_positio
         num_testes = 0
         testes_errados = set()        
 
-        for i in range(1, (len(os.listdir(files_folder)) // 2) + 1):            
+        for i in range(1, (len(os.listdir(files_folder)) // 2) + 1):   
+            print(f"\t subteste {i}")         
             num_testes += 1
             input_filename = Path(files_folder, 'in' + str(i))        
             input_file = open(input_filename, 'r')
@@ -49,7 +51,7 @@ def create_test(main, files, number_tests=11, prefix="", sufix="", start_positio
             num_linhas = 0                                                            
             
             parte_linhas = ""            
-            for j in range(len(result)):                
+            for j in range(len(result)):                                
                 num_linhas += 1
                 gabarito = output_file.readline().strip()            
                 parte_linhas += f"\t\t\tLinha {j}: \n" 

@@ -1,10 +1,10 @@
 def main(entrada=input, test=False):
     n = int(entrada())
 
-    soma_linhas = [0 for _ in range(n)]
-    soma_colunas = [0 for _ in range(n)]
-    diagonal_principal = 0
-    valores_usados = set()
+    soma_linhas = [0 for _ in range(n)]  # mantemos as somas de todas as linahs
+    soma_colunas = [0 for _ in range(n)] # colunas
+    diagonal_principal = 0  # e da diagonal principal
+    valores_usados = set()  # além dos valores usados, para que não ocorra repetição
 
     is_magico = True
     for i in range(n):
@@ -13,23 +13,23 @@ def main(entrada=input, test=False):
             valor = linha[j]
             valores_usados.add(valor)
 
-            if valor > n ** 2:
+            if valor > n ** 2:  # caso o valor seja maior que n ^ 2 ele não é mágico
                 is_magico = False
 
-            soma_linhas[i] += valor
-            soma_colunas[j] += valor
+            soma_linhas[i] += valor  # somamos à linha
+            soma_colunas[j] += valor  # e à coluna
             if i == j:
-                diagonal_principal += valor
+                diagonal_principal += valor  # além da diagonal principal
     soma_linhas = set(soma_linhas)
     soma_colunas = set(soma_colunas)
 
-    if len(soma_linhas) > 1 or len(soma_colunas) > 1 or len(valores_usados) < n**2:
+    if len(soma_linhas) > 1 or len(soma_colunas) > 1 or len(valores_usados) < n**2:  # verificamos se existe mais de uma soma nas linhas, colunas e se foram usados exatamente n ^ 2 valores, ou seja, nenhum valor repetido
         is_magico = False    
 
     else:
         coluna = soma_colunas.pop()
         linha = soma_linhas.pop()        
-        if not (coluna == linha == diagonal_principal):
+        if not (coluna == linha == diagonal_principal):  # agora verificamos se a soma das colunas, linhas e da diagonal principal não é a mesma
             is_magico = False
 
     if not test:

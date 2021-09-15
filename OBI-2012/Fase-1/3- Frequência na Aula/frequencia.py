@@ -1,9 +1,8 @@
 def main(entrada=input, test=False):
     n = int(entrada())
-    c = set()
+    c = set()  # guardamos a presenta em um set, que não possuí repetição de elementos
     for _ in range(n):
-        c.add(int(entrada()))
-    
+        c.add(int(entrada()))    
 
     if not test:
         print(len(c))

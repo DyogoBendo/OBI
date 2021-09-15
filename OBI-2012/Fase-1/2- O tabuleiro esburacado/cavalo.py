@@ -2,12 +2,14 @@ def main(entrada=input, test=False):
     n = int(entrada())
     m = list(map(int, entrada().split()))
 
-    px = 4
-    py = 3
-    c = 0
+    px = 4  # posição inicial x do cavalo
+    py = 3  # posição inicial y do cavalo
+    c = 0  # número de movimentos do cavalo
 
     for movimento in m:
         c += 1
+
+        # verificamos cada um dos movimentos do cavalo
         if movimento == 1:
             px += 1
             py += 2
@@ -32,6 +34,7 @@ def main(entrada=input, test=False):
         if movimento == 8:
             px -= 1
             py += 2
+        # se tiver caido no buraco, paramos
         if px == 1 and py == 3:
             break
         if px == 2 and py == 3:

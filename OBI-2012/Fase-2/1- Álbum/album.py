@@ -3,11 +3,12 @@ def main(entrada=input, test=False):
     l1, h1 = map(int, entrada().split())
     l2, h2 = map(int, entrada().split())
 
-    caso1 = l1 + l2 <= x and max(h1, h2) <= y
-    caso2 = h1 + h2 <= x and max(l1, l2) <= y
-    caso3 = h1 + l2 <= x and max(l1, h2) <= y
-    caso4 = l1 + h2 <= x and max(h1, l2) <= y
+    caso1 = l1 + l2 <= x and max(h1, h2) <= y  # consideramos as duas larguras e a maior altura
+    caso2 = h1 + h2 <= x and max(l1, l2) <= y  # as duas alturas com a maior largura    
+    caso3 = h1 + l2 <= x and max(l1, h2) <= y  # primeira altura soma com segunda largura e o maior entre a primeira largura e segunda altura
+    caso4 = l1 + h2 <= x and max(h1, l2) <= y  # invertemos em relação ao caso anterior
 
+    # invertemos em relação as comparações serem com x e y
     caso5 = l1 + l2 <= y and max(h1, h2) <= x
     caso6 = h1 + h2 <= y and max(l1, l2) <= x
     caso7 = h1 + l2 <= y and max(l1, h2) <= x

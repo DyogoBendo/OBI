@@ -1,13 +1,13 @@
 def main(entrada=input, test=False):
     n = int(entrada())
-    casas = set()
+    casas = set()  # mantemos um set, já que não há repetição...
     for i in range(n):
         casas.add(int(entrada()))
     k = int(entrada())    
     
     for casa in casas:
         par = k - casa
-        if par in casas:
+        if par in casas:  #... assim podemos verificar em tempo constante se existe algum par
             if par > casa:
                 dupla = (casa, par)
             else:

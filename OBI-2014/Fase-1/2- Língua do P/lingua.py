@@ -1,11 +1,11 @@
 def main(entrada=input, test=False):
-    entrada = entrada().split()
+    frase = entrada().split()
     c = ""
-    for e in entrada:
-        c += " " + e[1::2]
+    for e in frase:
+        c += " " + e[1::2]  # pegamos cada elemento pulando 2, já que existe um p antes de cada caracter
 
     if not test:
-        print(c[1:])
+        print(c[1:])  # pegamos a partir da posição 1 apenas pra ignorar o espaço da palavra inicial
     else:
         return [c[1:]]
 

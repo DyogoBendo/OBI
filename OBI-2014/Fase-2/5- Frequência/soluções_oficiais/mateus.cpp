@@ -69,16 +69,13 @@ int main() {
     switch (opr) {
     case 1:
       scanf("%d", &R);
-      if (lastRow[x].second) 
-	add(COL, lastRow[x].first, lastRow[x].second, -1);
-      
+      if (lastRow[x].second) add(COL, lastRow[x].first, lastRow[x].second, -1);
       add(COL, R, t, 1);
       lastRow[x] = make_pair(R, t);
       break;
     case 2:
       scanf("%d", &R);
-      if (lastCol[x].second)
-	add(ROW, lastCol[x].first, lastCol[x].second, -1);
+      if (lastCol[x].second) add(ROW, lastCol[x].first, lastCol[x].second, -1);
       add(ROW, R, t, 1);
       lastCol[x] = make_pair(R, t);
       break;
@@ -88,7 +85,7 @@ int main() {
     case 4:
       printf("%d\n", getBest(lastCol[x], t, COL));
       break;
-    }
+    }    
 
   }
   return 0;

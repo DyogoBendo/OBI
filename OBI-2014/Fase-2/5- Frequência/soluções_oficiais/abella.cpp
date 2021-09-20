@@ -61,7 +61,7 @@ struct halfsolver {
 	many[i] = bit_get(colorbit[i], q) - bit_get(colorbit[i], linesetwhen[x]);
 
     many[linesetcolor[x]] = n - accumulate(many.begin(), many.end(), 0);
-
+  
     return nc-1-(max_element(many.rbegin(), many.rend()) - many.rbegin());
   }
 };

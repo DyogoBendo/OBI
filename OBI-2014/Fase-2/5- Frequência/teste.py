@@ -12,7 +12,7 @@ if __name__ == '__main__':
     print(current_dir)
     print(os.path.basename(current_dir))
     files =  Path(current_dir, "tests")    
-    txt = create_test(main, files, number_tests=9, start_position=1)
+    txt = create_test(main, files, number_tests=9, start_position=7)
 
     ARQUIVO_FINAL = "resultado_testes.md"
 

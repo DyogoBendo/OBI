@@ -7,12 +7,12 @@ def main(entrada=input, test=False):
         e, l, d = entrada().split()
         e = int(e)
         d = int(d)                
-        pecas[e] = (d, l)
+        pecas[e] = (d, l)  # guardamos com que peça a peça e se liga e a letra
     
-    atual = 0
-    while atual != 1:
-        atual, l = pecas[atual]
-        palavra += l
+    atual = 0  # começamos pelo 0
+    while atual != 1:  # e vamos até o 1
+        atual, l = pecas[atual]  # pegamos a próxima peça e a letra dessa
+        palavra += l  # concatenamos a letra à pelavra
 
     if not test:
         print(palavra)

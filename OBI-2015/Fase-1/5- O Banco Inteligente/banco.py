@@ -1,22 +1,19 @@
-def main(entrada=input, test=False):
+S = 5001
+def main(entrada=input, test=False):        
     s = int(entrada())
-    n2, n5, n10, n20, n50, n100 = map(int, entrada().split())
-
+    notas = list(map(int, entrada().split()))
     valores = [2, 5, 10, 20, 50, 100]
 
-    k = [[(valores[j] // valores[i], valores[j] % valores[i]) for j in range(6)] for i in range(6)]    
-    c = 0
-    v = s
+    dp = [1 if i == 0 else 0 for i in range(s + 1)]  # com o valor 0 temos uma opção: devolver nada
 
-    notas_usadas = []
-    for i in range(5, -1, -1):
-        n = v//valores[i]
-        v -= n * valores[i]        
-        notas_usadas.insert(0, n)
-    for i in range(6):
-        for j in range(6):
-            c += 1
-
+    for i in range(5, -1, -1):  # verificamos para cada nota partindo da de maior valor                
+        for j in range(s, -1, -1):  # iniciando pelo valor desejado e descendo até chegar em 0                        
+            k = 1
+            while k <= notas[i] and j - k * valores[i] >= 0:  # verificamos para cada subtração possível do valor pela nota atual 
+                dp[j] += dp[j-k*valores[i]]                
+                k += 1            
+    c = dp[s]
+    
     if not test:
         print(c)
     else:

@@ -6,31 +6,29 @@ def main(entrada=input, test=False):
         if i == 0:
             a = v
         elif i == n-1:
-            b = v
-        else:
-            valores.append(v)
-    m = min(a, b)
+            b = v        
+        valores.append(v)    
     c = 0
     k = 0
-    ultimo_alto = 0
+    ultimo_alto = 0    
 
-    for i in range(len(valores)):
-        v = valores[i]
-        if v < m:            
-            c += 1
-        else:
-            if v < a:
-                k += 1                            
-            if v >= a:
-                a = v                
-                c += k
-                ultimo_alto = i
-                k = 0
-    b = 0
-    for i in range(ultimo_alto, len(valores)):
-        v = valores[i]
-        if v > b:
-            b = v
+    m = a
+
+    for i in range(1, len(valores)):
+        v = valores[i]        
+        if v >= m:            
+            ultimo_alto = i
+            m = v
+        else:  # quando o valor é menor do que o maior da esquerda que encontramos, nós contamos
+            c += 1            
+        
+    if ultimo_alto != n - 1:        
+        m = b        
+        for i in range(n - 1, ultimo_alto, -1):                                    
+            v = valores[i]
+            if v >= m:  # precisamos desconsiderar todos os limites que contamos anteriormente
+                c -= 1    
+                m = v                                        
 
     if not test:
         print(c)

@@ -8,8 +8,8 @@ def main(entrada=input, test=False):
             fila.insert(i, x)
         else:
             c = 0
-            for k in range(i - 2, -1, -1):
-                if fila[k] > fila[i - 1] + x:
+            for k in range(i - 2, -1, -1):  # verificamos cada um dos que estão a frente
+                if fila[k] > fila[i - 1] + x:  # até chegar em um que é maior
                     c = k + 1
                     break
             if not test:                

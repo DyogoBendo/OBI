@@ -16,29 +16,29 @@ def main(entrada=input, test=False):
             pass
         toca.append(linha)        
     c = 1
-    i, j = posicao_final
+    i, j = posicao_final  # partimos da posição final até a inicial
     ii, ji = posicao_inicial
     ultimo_movimento = 0
     while i!=ii or j != ji:                
         c += 1        
-        if j < m -1:            
-            if toca[i][j + 1] != 0 and ultimo_movimento != 1:
-                j += 1
+        if j < m -1:             
+            if toca[i][j + 1] != 0 and ultimo_movimento != 1: # não podemos ter acabado de ir para a esquerda
+                j += 1  # estamos indo para a direita
                 ultimo_movimento = 2
                 continue
         if j > 0:
-            if toca[i][j-1] != 0 and ultimo_movimento != 2:
-                j -= 1
+            if toca[i][j-1] != 0 and ultimo_movimento != 2:  # não podemos ter acabado de ir para a direita
+                j -= 1  # estamos indo para a esquerda
                 ultimo_movimento = 1
                 continue
         if i > 0:
-            if toca[i - 1][j] != 0 and ultimo_movimento != 3:
-                i -= 1
+            if toca[i - 1][j] != 0 and ultimo_movimento != 3:  # não podemos ter acabado de descer
+                i -= 1  # estamos subindo
                 ultimo_movimento = 4
                 continue
         if i < n-1:
-            if toca[i + 1][j] != 0 and ultimo_movimento != 4:
-                i += 1
+            if toca[i + 1][j] != 0 and ultimo_movimento != 4:  # não podemos descer se acabamos de subir
+                i += 1  # estamos descendo
                 ultimo_movimento = 3
                 continue        
 

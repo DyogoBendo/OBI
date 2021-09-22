@@ -5,14 +5,14 @@ def main(entrada=input, test=False):
     fecha_antes_abrir = False
     for i in range(n):
         linha = entrada()
-        for c in linha:
-            if c == "{":
+        for c in linha:  # verificamos cada caracter em cada linha
+            if c == "{":  # se está abrindo chaves
                 abre += 1                
-            if c == "}":
+            if c == "}":  # se está fechando
                 fecha += 1
-                if fecha > abre:                    
-                    fecha_antes_abrir = True
-    c = "S" if abre == fecha and not fecha_antes_abrir else "N"
+                if fecha > abre:  # se estiver fechando mais elementos do que tem aberto        
+                    fecha_antes_abrir = True  # significa que estamos fechando algo que ainda não foi aberto!
+    c = "S" if abre == fecha and not fecha_antes_abrir else "N"  # se nunca fecharmos antes de abrir e fecharmos tudo que abrimos então é válido
 
     if not test:
         print(c)

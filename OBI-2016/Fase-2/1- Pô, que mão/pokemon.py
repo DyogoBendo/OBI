@@ -7,9 +7,9 @@ def main(entrada=input, test=False):
     lista.sort()
     c = 0
     for i in range(len(lista)):
-        if lista[i] <= n:
-            n -= lista[i]
-            c += 1
+        if lista[i] <= n:  # se for possível evoluir com o número de doces
+            n -= lista[i]  # diminuimos o número de doces
+            c += 1  
 
     if not test:
         print(c)

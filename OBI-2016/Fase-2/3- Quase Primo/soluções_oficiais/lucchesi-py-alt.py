@@ -11,10 +11,6 @@ def quaseprimo(n, k):
         k.append(p)
     return res
 
-s = sys.stdin.read().split()
-n = int(s.pop(0))
-K = int(s.pop(0))
-k = []
-for i in range(K):
-    k.append(int(s.pop(0)))
-sys.stdout.write("%d\n" % quaseprimo(n, k))
+n, K = map(int, input().split())
+k = list(map(int, input().split()))
+print("%d\n" % quaseprimo(n, k))

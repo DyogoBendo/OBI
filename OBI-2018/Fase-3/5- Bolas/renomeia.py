@@ -2,7 +2,7 @@ import os, sys
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-for i in range(1, 5):
+for i in range(1, 6):
     path = current_dir + f"/tests/{i}"
     for file in os.listdir(path):
         try:
